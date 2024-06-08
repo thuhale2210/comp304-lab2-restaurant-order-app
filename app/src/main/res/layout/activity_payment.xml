@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:hint="Full Name"
+        android:layout_below="@id/paymentMethodTextView"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:hint="Address"
+        android:layout_below="@id/fullNameEditText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:hint="Phone Number"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <!-- Add additional fields as required -->
+
+    <!-- Credit/Debit card fields if needed -->
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:layout_below="@id/phoneNumberEditText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/expiryDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date"
+        android:layout_below="@id/cardNumberEditText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/submitOrderButton"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"
+        android:layout_below="@id/expiryDateEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

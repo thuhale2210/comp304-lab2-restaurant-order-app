@@ -1,0 +1,35 @@
+<resources>
+<!--    Main Screen-->
+    <string name="app_name">Tim Hortons</string>
+    <string name="developer">ThuHaLe_COMP304_Lab2</string>
+    <string name="enterBtn">Enter</string>
+
+<!--    Menu Screen-->
+    <string name="welcome_msg">Welcome to</string>
+    <string name="instruction_msg">Please open the menu at the right corner to order</string>
+    <string name="menuType1">Breakfast</string>
+    <string name="menuType2">Sandwiches</string>
+    <string name="menuType3">Wraps</string>
+    <string name="menuType4">Beverages or Drinks</string>
+    <string name="menuType5">Desserts and Shakes</string>
+
+<!--    Breakfast Menu-->
+    <string name="type1_name1">Bagel with Cream Cheese</string>
+    <string name="type1_name2">Croissant</string>
+    <string name="type1_name3">Scrambled Eggs n Toast</string>
+    <string name="type1_name4">Fruit Parfait</string>
+    <string name="type1_name5">Pancakes with Syrup</string>
+    <string name="type1_name6">Breakfast Burrito</string>
+
+    <string name="type1_info1">300 Cals | $2.50</string>
+    <string name="type1_info2">240 Cals | $2.00</string>
+    <string name="type1_info3">350 Cals | $4.50</string>
+    <string name="type1_info4">200 Cals | $3.50</string>
+    <string name="type1_info5">520 Cals | $5.00</string>
+    <string name="type1_info6">600 Cals | $6.00</string>
+
+    <string name="continueBtn">Continue shopping</string>
+    <string name="checkOutBtn">Checkout</string>
+
+
+</resources>

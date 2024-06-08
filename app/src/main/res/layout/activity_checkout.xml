@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".CheckoutActivity">
+
+    <!-- Display selected menu items -->
+    <TextView
+        android:id="@+id/selectedItemsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Items"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Radio group for selecting menu types -->
+    <RadioGroup
+        android:id="@+id/menuTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/selectedItemsTextView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <!-- Radio buttons will be added programmatically -->
+    </RadioGroup>
+
+    <!-- Radio group for selecting payment method -->
+    <RadioGroup
+        android:id="@+id/paymentMethodRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/menuTypeRadioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/cashPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Cash" />
+        <RadioButton
+            android:id="@+id/creditCardPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Credit Card" />
+        <RadioButton
+            android:id="@+id/debitCardPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Debit Card" />
+    </RadioGroup>
+</RelativeLayout>
