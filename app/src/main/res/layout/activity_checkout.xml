@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:id="@+id/main"
     tools:context=".CheckoutActivity">
 
@@ -11,46 +12,35 @@
         android:id="@+id/selectedItemsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selected Items"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/myCart"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
 
     <!-- Radio group for selecting menu types -->
     <RadioGroup
         android:id="@+id/menuTypeRadioGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/selectedItemsTextView"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true">
-        <!-- Radio buttons will be added programmatically -->
+        android:layout_above="@id/btnCheckout"
+        android:layout_marginTop="10dp">
     </RadioGroup>
 
-    <!-- Radio group for selecting payment method -->
-    <RadioGroup
-        android:id="@+id/paymentMethodRadioGroup"
-        android:layout_width="wrap_content"
+    <!-- Checkout button -->
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/menuTypeRadioGroup"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
-        <RadioButton
-            android:id="@+id/cashPayment"
-            android:layout_width="wrap_content"
-            android:layout_height="48sp"
-            android:text="Cash" />
-        <RadioButton
-            android:id="@+id/creditCardPayment"
-            android:layout_width="wrap_content"
-            android:layout_height="48sp"
-            android:text="Credit Card" />
-        <RadioButton
-            android:id="@+id/debitCardPayment"
-            android:layout_width="wrap_content"
-            android:layout_height="48sp"
-            android:text="Debit Card" />
-    </RadioGroup>
+        android:text="@string/proceedPayment"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/primary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
 </RelativeLayout>

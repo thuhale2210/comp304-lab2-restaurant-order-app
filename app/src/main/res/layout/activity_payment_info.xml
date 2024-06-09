@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PaymentInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Full name -->
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <!-- Phone number -->
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <!-- Credit/debit card number -->
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Card Number"
+            android:inputType="number" />
+
+        <!-- Expiry date -->
+        <EditText
+            android:id="@+id/expiryDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Expiry Date"
+            android:inputType="date" />
+
+        <!-- Custom fields -->
+        <EditText
+            android:id="@+id/favoriteSportEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Favorite Sport"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/favoriteTeamEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Favorite Team"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/favoriteShowEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:hint="Favorite Show/Movie"
+            android:inputType="text" />
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

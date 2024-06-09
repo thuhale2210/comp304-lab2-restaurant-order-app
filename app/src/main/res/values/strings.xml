@@ -1,10 +1,10 @@
 <resources>
-<!--    Main Screen-->
+    <!--    Main Screen-->
     <string name="app_name">Tim Hortons</string>
     <string name="developer">ThuHaLe_COMP304_Lab2</string>
     <string name="enterBtn">Enter</string>
 
-<!--    Menu Screen-->
+    <!--    Menu Screen-->
     <string name="welcome_msg">Welcome to</string>
     <string name="instruction_msg">Please open the menu at the right corner to order</string>
     <string name="menuType1">Breakfast</string>
@@ -13,10 +13,17 @@
     <string name="menuType4">Beverages or Drinks</string>
     <string name="menuType5">Desserts and Shakes</string>
 
-<!--    Breakfast Menu-->
-    <string name="type1_name1">Bagel with Cream Cheese</string>
+    <string name="btnContinue">Continue shopping</string>
+    <string name="btnCheckOut">Checkout</string>
+
+    <!--    Checkout Screen-->
+    <string name="myCart">My Cart</string>
+    <string name="proceedPayment">Proceed to Payment</string>
+
+    <!--    Breakfast Menu-->
+    <string name="type1_name1">Bagel with Cheese</string>
     <string name="type1_name2">Croissant</string>
-    <string name="type1_name3">Scrambled Eggs n Toast</string>
+    <string name="type1_name3">Scrambled Eggs</string>
     <string name="type1_name4">Fruit Parfait</string>
     <string name="type1_name5">Pancakes with Syrup</string>
     <string name="type1_name6">Breakfast Burrito</string>
@@ -28,8 +35,64 @@
     <string name="type1_info5">520 Cals | $5.00</string>
     <string name="type1_info6">600 Cals | $6.00</string>
 
-    <string name="continueBtn">Continue shopping</string>
-    <string name="checkOutBtn">Checkout</string>
+    <!-- Sandwiches Menu -->
+    <string name="type2_name1">Bacon Lettuce Tomato</string>
+    <string name="type2_name2">Turkey Club</string>
+    <string name="type2_name3">Grilled Cheese</string>
+    <string name="type2_name4">Ham n Cheese</string>
+    <string name="type2_name5">Chicken Sandwich</string>
+    <string name="type2_name6">Tuna Melt</string>
 
+    <string name="type2_info1">400 Cals | $7.00</string>
+    <string name="type2_info2">500 Cals | $8.00</string>
+    <string name="type2_info3">450 Cals | $5.00</string>
+    <string name="type2_info4">480 Cals | $6.50</string>
+    <string name="type2_info5">520 Cals | $7.50</string>
+    <string name="type2_info6">550 Cals | $7.00</string>
+
+    <!-- Wraps Menu -->
+    <string name="type3_name1">Chicken Caesar Wrap</string>
+    <string name="type3_name2">Turkey Avocado Wrap</string>
+    <string name="type3_name3">Veggie Wrap</string>
+    <string name="type3_name4">Buffalo Chicken Wrap</string>
+    <string name="type3_name5">Hummus Wrap</string>
+    <string name="type3_name6">Steak Wrap</string>
+
+    <string name="type3_info1">420 Cals | $6.50</string>
+    <string name="type3_info2">480 Cals | $7.00</string>
+    <string name="type3_info3">350 Cals | $5.50</string>
+    <string name="type3_info4">530 Cals | $7.50</string>
+    <string name="type3_info5">300 Cals | $5.00</string>
+    <string name="type3_info6">600 Cals | $8.00</string>
+
+    <!-- Beverages or Drinks Menu -->
+    <string name="type4_name1">Coffee</string>
+    <string name="type4_name2">Tea</string>
+    <string name="type4_name3">Orange Juice</string>
+    <string name="type4_name4">Smoothie</string>
+    <string name="type4_name5">Soda</string>
+    <string name="type4_name6">Water</string>
+
+    <string name="type4_info1">0 Cals | $2.00</string>
+    <string name="type4_info2">0 Cals | $1.50</string>
+    <string name="type4_info3">110 Cals | $3.00</string>
+    <string name="type4_info4">200 Cals | $4.00</string>
+    <string name="type4_info5">150 Cals | $1.50</string>
+    <string name="type4_info6">0 Cals | $1.00</string>
+
+    <!-- Desserts & Shakes Menu -->
+    <string name="type5_name1">Chocolate Cake</string>
+    <string name="type5_name2">Ice Cream</string>
+    <string name="type5_name3">Fruit Salad</string>
+    <string name="type5_name4">Strawberry Shake</string>
+    <string name="type5_name5">Tiramisu</string>
+    <string name="type5_name6">Cheesecake</string>
+
+    <string name="type5_info1">350 Cals | $4.00</string>
+    <string name="type5_info2">200 Cals | $3.00</string>
+    <string name="type5_info3">150 Cals | $2.50</string>
+    <string name="type5_info4">400 Cals | $4.50</string>
+    <string name="type5_info5">250 Cals | $3.50</string>
+    <string name="type5_info6">450 Cals | $5.00</string>
 
 </resources>

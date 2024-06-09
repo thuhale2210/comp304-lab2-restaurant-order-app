@@ -17,7 +17,7 @@
         android:layout_marginStart="20sp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/menuType1"
-        android:textSize="25sp"
+        android:textSize="@dimen/titleSize"
         android:textStyle="bold"
         android:textColor="@color/black" />
 
@@ -72,6 +72,7 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name1"
+                            android:textSize="@dimen/txtSize"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/type1_info1"
@@ -79,14 +80,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info1" />
+                            android:text="@string/type1_info1"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name1_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginEnd="0sp"
+                        android:layout_marginStart="10sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -121,21 +122,22 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name3"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize"/>
                         <TextView
                             android:id="@+id/type1_info3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info3" />
+                            android:text="@string/type1_info3"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name3_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginEnd="0sp"
+                        android:layout_marginStart="30sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -170,21 +172,22 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name5"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize"/>
                         <TextView
                             android:id="@+id/type1_info5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info5" />
+                            android:text="@string/type1_info5"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name5_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginStart="20sp"
+                        android:layout_marginStart="0sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded"/>
                 </LinearLayout>
@@ -229,21 +232,22 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name2"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize"/>
                         <TextView
                             android:id="@+id/type1_info2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info2" />
+                            android:text="@string/type1_info2"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name2_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="50sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded"/>
                 </LinearLayout>
@@ -279,21 +283,22 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name4"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize"/>
                         <TextView
                             android:id="@+id/type1_info4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info4" />
+                            android:text="@string/type1_info4"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name4_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="50sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded"/>
                 </LinearLayout>
@@ -329,21 +334,22 @@
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
                             android:text="@string/type1_name6"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
                         <TextView
                             android:id="@+id/type1_info6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginStart="20sp"
-                            android:text="@string/type1_info6" />
+                            android:text="@string/type1_info6"
+                            android:textSize="@dimen/descriptionSize" />
                     </LinearLayout>
                     <CheckBox
                         android:id="@+id/type1_name6_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="20sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded" />
                 </LinearLayout>
@@ -360,31 +366,31 @@
 
         <!-- Continue Shopping Button -->
         <Button
-            android:id="@+id/continueBtn"
+            android:id="@+id/btnContinue"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="180sp"
+            android:layout_width="210sp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="60sp"
-            android:text="@string/continueBtn"
+            android:layout_marginStart="40sp"
+            android:text="@string/btnContinue"
             android:textColor="@color/white"
-            android:textSize="13sp"
+            android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"
             android:backgroundTint="@color/primary" />
 
         <!-- CheckOut Button -->
         <Button
-            android:id="@+id/checkOutBtn"
+            android:id="@+id/btnCheckOut"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="120sp"
+            android:layout_width="130sp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20sp"
             android:layout_marginTop="16dp"
-            android:text="@string/checkOutBtn"
+            android:text="@string/btnCheckOut"
             android:textColor="@color/primary"
-            android:textSize="13sp"
+            android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"
             android:backgroundTint="@color/secondary" />
     </LinearLayout>

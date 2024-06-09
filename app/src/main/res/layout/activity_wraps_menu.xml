@@ -1,18 +1,386 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".WrapsMenuActivity">
 
+    <!-- Wrap Menu title -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/menu_type3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/menuType3"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="320dp" />
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
 
-</RelativeLayout>
+    <!-- ScrollView with 70% height of parent -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Column 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <!-- Item 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic1"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_caesar_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/type3_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name1"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+                        <TextView
+                            android:id="@+id/type3_info1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info1"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/type3_name1_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic3"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_veggie_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/type3_name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name3"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+                        <TextView
+                            android:id="@+id/type3_info3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info3"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/type3_name3_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="40sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Item 5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic5"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_hummus_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/type3_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name5"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+                        <TextView
+                            android:id="@+id/type3_info5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info5"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/type3_name5_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="40sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <!-- Item 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic2"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_turkey_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/type3_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+                        <TextView
+                            android:id="@+id/type3_info2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info2"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/type3_name2_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:gravity="center"
+                        tools:ignore="RtlHardcoded"/>
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic4"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_buffalo_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/type3_name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name4"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+
+                        <TextView
+                            android:id="@+id/type3_info4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info4"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/type3_name4_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:gravity="center"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <!-- Item 6 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/type3_pic6"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/type3_steak_wrap"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/type3_name6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_name6"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/txtSize" />
+                        <TextView
+                            android:id="@+id/type3_info6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:text="@string/type3_info6"
+                            android:textSize="@dimen/descriptionSize" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/type3_name6_cb"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="40sp"
+                        android:gravity="center"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Continue Shopping Button -->
+        <Button
+            android:id="@+id/btnContinue"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="210sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="40sp"
+            android:text="@string/btnContinue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/primary" />
+
+        <!-- CheckOut Button -->
+        <Button
+            android:id="@+id/btnCheckOut"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/btnCheckOut"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/txtSize"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/secondary" />
+    </LinearLayout>
+
+</LinearLayout>

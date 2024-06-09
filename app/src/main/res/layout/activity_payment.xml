@@ -3,76 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".PaymentActivity">
 
+    <!-- Display payment method title -->
     <TextView
         android:id="@+id/paymentMethodTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment Method"
+        android:text="Select Payment Method"
         android:textSize="18sp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:id="@+id/fullNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="48sp"
-        android:hint="Full Name"
+    <!-- Radio group for selecting payment method -->
+    <RadioGroup
+        android:id="@+id/paymentMethodRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_below="@id/paymentMethodTextView"
         android:layout_marginTop="10dp"
-        android:padding="10dp"/>
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/cashPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Cash" />
+        <RadioButton
+            android:id="@+id/creditCardPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Credit Card" />
+        <RadioButton
+            android:id="@+id/debitCardPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:text="Debit Card" />
+    </RadioGroup>
 
-    <EditText
-        android:id="@+id/addressEditText"
-        android:layout_width="match_parent"
-        android:layout_height="48sp"
-        android:hint="Address"
-        android:layout_below="@id/fullNameEditText"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"/>
-
-    <EditText
-        android:id="@+id/phoneNumberEditText"
-        android:layout_width="match_parent"
-        android:layout_height="48sp"
-        android:hint="Phone Number"
-        android:layout_below="@id/addressEditText"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"/>
-
-    <!-- Add additional fields as required -->
-
-    <!-- Credit/Debit card fields if needed -->
-    <EditText
-        android:id="@+id/cardNumberEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Card Number"
-        android:layout_below="@id/phoneNumberEditText"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:visibility="gone"/>
-
-    <EditText
-        android:id="@+id/expiryDateEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Expiry Date"
-        android:layout_below="@id/cardNumberEditText"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:visibility="gone"/>
-
+    <!-- Proceed button -->
     <Button
-        android:id="@+id/submitOrderButton"
-        android:layout_width="150sp"
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit Order"
-        android:layout_below="@id/expiryDateEditText"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="@color/primary"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true" />
+        android:text="Proceed"
+        android:layout_below="@id/paymentMethodRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>
