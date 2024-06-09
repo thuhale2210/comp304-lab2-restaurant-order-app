@@ -1,6 +1,6 @@
 ### Restaurant Menu Selection App
 
-This Android application enables customers to order food online for home delivery or store pick-up from a restaurant. The app allows users to choose from various types of food and drinks, following a seamless navigation process through different menus and finally checkout.
+This Android application enables customers to order food online for home delivery or store pick-up from a restaurant. The app allows users to choose from various types of food and drinks, following a seamless navigation process through different menus and finally checkout. This app uses Tim Hortons' visual identity.
 
 #### Features:
 - **Main Screen**: Displays the restaurant logo and an "Enter" button to begin the ordering process.
