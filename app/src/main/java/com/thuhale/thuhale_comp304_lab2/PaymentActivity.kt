@@ -1,20 +1,45 @@
 package com.thuhale.thuhale_comp304_lab2
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class PaymentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_payment)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // Initialize views
+        val paymentMethodRadioGroup: RadioGroup = findViewById(R.id.paymentMethodRadioGroup)
+        val btnPayment: Button = findViewById(R.id.btnPayment)
+
+        // Set click listener for the proceed button
+        btnPayment.setOnClickListener {
+            // Get the selected payment method
+            val selectedPaymentMethodId = paymentMethodRadioGroup.checkedRadioButtonId
+            val selectedPaymentMethod: String = findViewById<RadioButton>(selectedPaymentMethodId).text.toString()
+
+            // Redirect to the appropriate activity based on the selected payment method
+            when (selectedPaymentMethod) {
+                getString(R.string.methodCash) -> {
+                    // Handle cash payment
+                    val intent = Intent(this, OrderCompleteActivity::class.java)
+                    startActivity(intent)
+                }
+                getString(R.string.methodCredit) -> {
+                    // Handle credit card payment
+                    val intent = Intent(this, PaymentInfoActivity::class.java)
+                    startActivity(intent)
+                }
+                getString(R.string.methodDebit) -> {
+                    // Handle debit card payment
+                    val intent = Intent(this, PaymentInfoActivity::class.java)
+                    startActivity(intent)
+                }
+            }
         }
     }
 }

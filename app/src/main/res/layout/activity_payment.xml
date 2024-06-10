@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:padding="16dp"
     tools:context=".PaymentActivity">
 
@@ -11,10 +12,12 @@
         android:id="@+id/paymentMethodTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Payment Method"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/titleSelectPayment"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20sp"/>
 
     <!-- Radio group for selecting payment method -->
     <RadioGroup
@@ -23,32 +26,49 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/paymentMethodTextView"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true">
+        android:layout_marginTop="10dp">
         <RadioButton
             android:id="@+id/cashPayment"
             android:layout_width="wrap_content"
             android:layout_height="48sp"
-            android:text="Cash" />
+            android:textSize="@dimen/txtSize"
+            android:text="@string/methodCash"
+            android:checked="true" />
         <RadioButton
             android:id="@+id/creditCardPayment"
             android:layout_width="wrap_content"
             android:layout_height="48sp"
-            android:text="Credit Card" />
+            android:textSize="@dimen/txtSize"
+            android:text="@string/methodCredit" />
         <RadioButton
             android:id="@+id/debitCardPayment"
             android:layout_width="wrap_content"
             android:layout_height="48sp"
-            android:text="Debit Card" />
+            android:textSize="@dimen/txtSize"
+            android:text="@string/methodDebit" />
     </RadioGroup>
+
+    <!--    Divider-->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="10sp"
+        android:layout_above="@id/btnPayment"/>
 
     <!-- Proceed button -->
     <Button
-        android:id="@+id/btnProceed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Proceed"
-        android:layout_below="@id/paymentMethodRadioGroup"
+        android:id="@+id/btnPayment"
+        android:layout_width="350sp"
+        android:layout_height="60sp"
+        android:text="@string/proceedPayment"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/primary"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
 </RelativeLayout>

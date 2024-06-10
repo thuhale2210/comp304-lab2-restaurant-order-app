@@ -247,7 +247,7 @@
                         android:id="@+id/type1_name2_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="50sp"
+                        android:layout_marginStart="65sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded"/>
                 </LinearLayout>
@@ -388,7 +388,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20sp"
             android:layout_marginTop="16dp"
-            android:text="@string/btnCheckOut"
+            android:text="@string/btnMyCart"
             android:textColor="@color/primary"
             android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"

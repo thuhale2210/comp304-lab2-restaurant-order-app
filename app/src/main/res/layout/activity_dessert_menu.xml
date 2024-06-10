@@ -137,7 +137,7 @@
                         android:id="@+id/type5_name3_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="50sp"
+                        android:layout_marginStart="70sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -187,9 +187,8 @@
                         android:id="@+id/type5_name5_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="50sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded"/>
+                        android:layout_marginStart="80sp"
+                        android:gravity="center" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -247,9 +246,8 @@
                         android:id="@+id/type5_name2_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="50sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded"/>
+                        android:layout_marginStart="70sp"
+                        android:gravity="center" />
                 </LinearLayout>
 
                 <!-- Item 4 -->
@@ -349,7 +347,7 @@
                         android:id="@+id/type5_name6_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="50sp"
+                        android:layout_marginStart="60sp"
                         android:gravity="center" />
                 </LinearLayout>
             </LinearLayout>
@@ -387,7 +385,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20sp"
             android:layout_marginTop="16dp"
-            android:text="@string/btnCheckOut"
+            android:text="@string/btnMyCart"
             android:textColor="@color/primary"
             android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"

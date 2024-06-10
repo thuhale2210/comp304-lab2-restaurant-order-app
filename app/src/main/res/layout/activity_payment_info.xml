@@ -1,85 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:padding="16dp"
     tools:context=".PaymentInfoActivity">
 
-    <LinearLayout
+    <!-- Display payment info title -->
+    <TextView
+        android:id="@+id/paymentInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titlePaymentInfo"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20sp"/>
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10sp"
+        android:layout_below="@id/paymentInfoTextView"
+        app:srcCompat="@drawable/credit_card"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_below="@id/imgCard"
+        android:layout_above="@id/divider2">
 
-        <!-- Full name -->
-        <EditText
-            android:id="@+id/fullNameEditText"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Full Name"
-            android:inputType="textPersonName" />
-
-        <!-- Address -->
-        <EditText
-            android:id="@+id/addressEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Address"
-            android:inputType="textPostalAddress" />
-
-        <!-- Phone number -->
-        <EditText
-            android:id="@+id/phoneNumberEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Phone Number"
-            android:inputType="phone" />
-
-        <!-- Credit/debit card number -->
-        <EditText
-            android:id="@+id/cardNumberEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Card Number"
-            android:inputType="number" />
-
-        <!-- Expiry date -->
-        <EditText
-            android:id="@+id/expiryDateEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Expiry Date"
-            android:inputType="date" />
-
-        <!-- Custom fields -->
-        <EditText
-            android:id="@+id/favoriteSportEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Favorite Sport"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/favoriteTeamEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Favorite Team"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/favoriteShowEditText"
-            android:layout_width="match_parent"
-            android:layout_height="48sp"
-            android:hint="Favorite Show/Movie"
-            android:inputType="text" />
-
-        <!-- Submit button -->
-        <Button
-            android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
-</ScrollView>
+            android:orientation="vertical">
+
+            <!-- Full name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/name"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/address"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/address_hint"
+                android:inputType="textPostalAddress"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- Phone number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/phoneNumber"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/phoneNumber_hint"
+                android:inputType="phone"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- Credit/debit card number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/cardNumber"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/cardNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/cardNumber_hint"
+                android:inputType="number"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- Expiry date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/validThru"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/expiryDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/validThru_hint"
+                android:inputType="date"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- CVV/CVC -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/cvv"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/cvvEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/cvv_hint"
+                android:inputType="numberPassword"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- Custom fields -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/secQuestion1"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/favoriteTeamEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/secQuestion_hint"
+                android:inputType="text"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/secQuestion2"
+                android:textSize="@dimen/txtSize"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/favoriteShowEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:hint="@string/secQuestion_hint"
+                android:inputType="text"
+                android:layout_margin="10sp"
+                android:paddingStart="10dp"
+                android:background="@drawable/border"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    Divider-->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="10sp"
+        android:layout_above="@id/btnSubmit"/>
+
+    <!-- Submit button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="350sp"
+        android:layout_height="60sp"
+        android:text="@string/btnSubmit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

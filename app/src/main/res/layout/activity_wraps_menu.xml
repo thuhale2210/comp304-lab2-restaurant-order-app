@@ -132,7 +132,7 @@
                         android:id="@+id/type3_name3_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="50sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -337,7 +337,7 @@
                         android:id="@+id/type3_name6_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="60sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded" />
                 </LinearLayout>
@@ -376,7 +376,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20sp"
             android:layout_marginTop="16dp"
-            android:text="@string/btnCheckOut"
+            android:text="@string/btnMyCart"
             android:textColor="@color/primary"
             android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"

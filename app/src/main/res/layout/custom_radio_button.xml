@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/type1_pic1"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        app:cardCornerRadius="8sp"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <RadioButton
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="48sp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="10sp"/>
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

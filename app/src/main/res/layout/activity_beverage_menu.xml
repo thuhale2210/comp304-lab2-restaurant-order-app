@@ -87,7 +87,7 @@
                         android:id="@+id/type4_name1_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="60sp"
+                        android:layout_marginStart="90sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
@@ -187,9 +187,8 @@
                         android:id="@+id/type4_name5_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="40sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded"/>
+                        android:layout_marginStart="100sp"
+                        android:gravity="center" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -247,9 +246,8 @@
                         android:id="@+id/type4_name2_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="60sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded"/>
+                        android:layout_marginStart="100sp"
+                        android:gravity="center" />
                 </LinearLayout>
 
                 <!-- Item 4 -->
@@ -298,9 +296,8 @@
                         android:id="@+id/type4_name4_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="40sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded"/>
+                        android:layout_marginStart="70sp"
+                        android:gravity="center" />
                 </LinearLayout>
 
                 <!-- Item 6 -->
@@ -349,9 +346,8 @@
                         android:id="@+id/type4_name6_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="60sp"
-                        android:gravity="center"
-                        tools:ignore="RtlHardcoded" />
+                        android:layout_marginStart="100sp"
+                        android:gravity="center" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -388,7 +384,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20sp"
             android:layout_marginTop="16dp"
-            android:text="@string/btnCheckOut"
+            android:text="@string/btnMyCart"
             android:textColor="@color/primary"
             android:textSize="@dimen/txtSize"
             android:background="@drawable/rounded_corner"

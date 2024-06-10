@@ -14,11 +14,49 @@
     <string name="menuType5">Desserts and Shakes</string>
 
     <string name="btnContinue">Continue shopping</string>
-    <string name="btnCheckOut">Checkout</string>
+    <string name="btnMyCart">My Cart</string>
 
     <!--    Checkout Screen-->
     <string name="myCart">My Cart</string>
-    <string name="proceedPayment">Proceed to Payment</string>
+    <string name="titleDeliveryType">Delivery type</string>
+    <string name="totalPrice">Total</string>
+    <string-array name="deliveryTypes">
+        <item>Pick up at store (default)</item>
+        <item>Home delivery</item>
+    </string-array>
+    <string name="btnCheckOut">Checkout</string>
+
+    <!--    Payment Screen-->
+    <string name="titleSelectPayment">Payment Methods</string>
+    <string name="msgSelectPayment">Please select payment method:</string>
+    <string name="methodCash">Cash</string>
+    <string name="methodCredit">Credit Card</string>
+    <string name="methodDebit">Debit Card</string>
+    <string name="proceedPayment">Proceed to Payment Info</string>
+
+    <!--    Payment Info Screen-->
+    <string name="titlePaymentInfo">Add Your Payment Info</string>
+    <string name="name">Cardholder Name</string>
+    <string name="name_hint">Eg: John Doe</string>
+    <string name="address">Address</string>
+    <string name="address_hint">Eg: Progress Avenue</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="phoneNumber_hint">Eg: 647–654–4321</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="cardNumber_hint">Eg: 1234567890123456</string>
+    <string name="validThru">Valid Thru</string>
+    <string name="validThru_hint">Eg: MM/YY</string>
+    <string name="cvv">CVV/CVC</string>
+    <string name="cvv_hint">Eg: 123</string>
+    <string name="secQuestion1">Security question 1: What is your mother\'s maiden name?</string>
+    <string name="secQuestion2">Security question 2: What is your favorite show/movie?</string>
+    <string name="secQuestion_hint">Your answer</string>
+    <string name="btnSubmit">Submit</string>
+
+    <!--    Order Confirmation-->
+    <string name="btnBackToHome">Back to home</string>
+    <string name="msgOrderConfirmed">Order Confirmed</string>
+    <string name="msgThankYou">Thank you for ordering with Tim Hortons! We hope you enjoy your meal.</string>
 
     <!--    Breakfast Menu-->
     <string name="type1_name1">Bagel with Cheese</string>
@@ -28,12 +66,12 @@
     <string name="type1_name5">Pancakes with Syrup</string>
     <string name="type1_name6">Breakfast Burrito</string>
 
-    <string name="type1_info1">300 Cals | $2.50</string>
-    <string name="type1_info2">240 Cals | $2.00</string>
-    <string name="type1_info3">350 Cals | $4.50</string>
-    <string name="type1_info4">200 Cals | $3.50</string>
-    <string name="type1_info5">520 Cals | $5.00</string>
-    <string name="type1_info6">600 Cals | $6.00</string>
+    <string name="type1_info1">$2.50</string>
+    <string name="type1_info2">$2.00</string>
+    <string name="type1_info3">$4.50</string>
+    <string name="type1_info4">$3.50</string>
+    <string name="type1_info5">$5.00</string>
+    <string name="type1_info6">$6.00</string>
 
     <!-- Sandwiches Menu -->
     <string name="type2_name1">Bacon Lettuce Tomato</string>
@@ -43,12 +81,12 @@
     <string name="type2_name5">Chicken Sandwich</string>
     <string name="type2_name6">Tuna Melt</string>
 
-    <string name="type2_info1">400 Cals | $7.00</string>
-    <string name="type2_info2">500 Cals | $8.00</string>
-    <string name="type2_info3">450 Cals | $5.00</string>
-    <string name="type2_info4">480 Cals | $6.50</string>
-    <string name="type2_info5">520 Cals | $7.50</string>
-    <string name="type2_info6">550 Cals | $7.00</string>
+    <string name="type2_info1">$7.00</string>
+    <string name="type2_info2">$8.00</string>
+    <string name="type2_info3">$5.00</string>
+    <string name="type2_info4">$6.50</string>
+    <string name="type2_info5">$7.50</string>
+    <string name="type2_info6">$7.00</string>
 
     <!-- Wraps Menu -->
     <string name="type3_name1">Chicken Caesar Wrap</string>
@@ -58,12 +96,12 @@
     <string name="type3_name5">Hummus Wrap</string>
     <string name="type3_name6">Steak Wrap</string>
 
-    <string name="type3_info1">420 Cals | $6.50</string>
-    <string name="type3_info2">480 Cals | $7.00</string>
-    <string name="type3_info3">350 Cals | $5.50</string>
-    <string name="type3_info4">530 Cals | $7.50</string>
-    <string name="type3_info5">300 Cals | $5.00</string>
-    <string name="type3_info6">600 Cals | $8.00</string>
+    <string name="type3_info1">$6.50</string>
+    <string name="type3_info2">$7.00</string>
+    <string name="type3_info3">$5.50</string>
+    <string name="type3_info4">$7.50</string>
+    <string name="type3_info5">$5.00</string>
+    <string name="type3_info6">$8.00</string>
 
     <!-- Beverages or Drinks Menu -->
     <string name="type4_name1">Coffee</string>
@@ -73,12 +111,12 @@
     <string name="type4_name5">Soda</string>
     <string name="type4_name6">Water</string>
 
-    <string name="type4_info1">0 Cals | $2.00</string>
-    <string name="type4_info2">0 Cals | $1.50</string>
-    <string name="type4_info3">110 Cals | $3.00</string>
-    <string name="type4_info4">200 Cals | $4.00</string>
-    <string name="type4_info5">150 Cals | $1.50</string>
-    <string name="type4_info6">0 Cals | $1.00</string>
+    <string name="type4_info1">$2.00</string>
+    <string name="type4_info2">$1.50</string>
+    <string name="type4_info3">$3.00</string>
+    <string name="type4_info4">$4.00</string>
+    <string name="type4_info5">$1.50</string>
+    <string name="type4_info6">$1.00</string>
 
     <!-- Desserts & Shakes Menu -->
     <string name="type5_name1">Chocolate Cake</string>
@@ -88,11 +126,11 @@
     <string name="type5_name5">Tiramisu</string>
     <string name="type5_name6">Cheesecake</string>
 
-    <string name="type5_info1">350 Cals | $4.00</string>
-    <string name="type5_info2">200 Cals | $3.00</string>
-    <string name="type5_info3">150 Cals | $2.50</string>
-    <string name="type5_info4">400 Cals | $4.50</string>
-    <string name="type5_info5">250 Cals | $3.50</string>
-    <string name="type5_info6">450 Cals | $5.00</string>
+    <string name="type5_info1">$4.00</string>
+    <string name="type5_info2">$3.00</string>
+    <string name="type5_info3">$2.50</string>
+    <string name="type5_info4">$4.50</string>
+    <string name="type5_info5">$3.50</string>
+    <string name="type5_info6">$5.00</string>
 
 </resources>

@@ -17,30 +17,100 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20sp"/>
 
-    <!-- Radio group for selecting menu types -->
-    <RadioGroup
-        android:id="@+id/menuTypeRadioGroup"
+    <ScrollView
+        android:id="@+id/itemsInCart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/selectedItemsTextView"
-        android:layout_above="@id/btnCheckout"
-        android:layout_marginTop="10dp">
-    </RadioGroup>
+        android:layout_below="@id/selectedItemsTextView">
+        <!-- Radio group for selecting menu types -->
+        <RadioGroup
+            android:id="@+id/menuTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+        </RadioGroup>
+    </ScrollView>
+
+    <!--    Divider-->
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/itemsInCart"
+        android:layout_marginTop="20sp"/>
+
+<!--    Total Price-->
+    <LinearLayout
+        android:id="@+id/totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/totalPrice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20sp" />
+        <TextView
+            android:id="@+id/totalPriceToBeCalculated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!--    Delivery Type-->
+    <LinearLayout
+        android:id="@+id/deliveryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPrice"
+        android:layout_marginTop="5sp">
+        <TextView
+            android:id="@+id/textViewDeliveryType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleDeliveryType"
+            android:textSize="20sp"
+            android:layout_marginEnd="20sp"/>
+        <Spinner
+            android:id="@+id/spinnerDeliveryType"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:entries="@array/deliveryTypes"/>
+    </LinearLayout>
+
+    <!--    Divider-->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="10sp"
+        android:layout_above="@id/btnCheckout"/>
 
     <!-- Checkout button -->
     <Button
         android:id="@+id/btnCheckout"
         android:layout_width="350sp"
-        android:layout_height="wrap_content"
-        android:text="@string/proceedPayment"
+        android:layout_height="60sp"
+        android:text="@string/btnCheckOut"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/primary"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
 </RelativeLayout>
