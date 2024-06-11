@@ -247,7 +247,7 @@
                         android:id="@+id/type2_name2_cb"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="60sp"
                         android:gravity="center"
                         tools:ignore="RtlHardcoded"/>
                 </LinearLayout>

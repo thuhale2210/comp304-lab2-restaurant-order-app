@@ -1,6 +1,8 @@
 package com.thuhale.thuhale_comp304_lab2
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -19,10 +21,19 @@ class OrderCompleteActivity : AppCompatActivity() {
             insets
         }
 
+        // Application Shared Preferences
+        val sharedPreferences: SharedPreferences = this.getSharedPreferences("MyPref", Context.MODE_PRIVATE)
+
         val btnBackHome = findViewById<Button>(R.id.btnBackToHome)
 
         // Save preferences and navigate to Checkout Activity
         btnBackHome.setOnClickListener {
+            // To clear shared preferences
+            val editor: SharedPreferences.Editor = sharedPreferences.edit()
+            editor.clear()
+            editor.apply()
+
+            // To back to Main screen
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
