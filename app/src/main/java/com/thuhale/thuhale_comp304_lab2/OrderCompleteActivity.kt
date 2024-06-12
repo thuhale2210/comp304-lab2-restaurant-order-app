@@ -24,6 +24,7 @@ class OrderCompleteActivity : AppCompatActivity() {
         // Application Shared Preferences
         val sharedPreferences: SharedPreferences = this.getSharedPreferences("MyPref", Context.MODE_PRIVATE)
 
+        // Create btn
         val btnBackHome = findViewById<Button>(R.id.btnBackToHome)
 
         // Save preferences and navigate to Checkout Activity
