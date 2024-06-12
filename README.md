@@ -25,9 +25,7 @@ This app uses Tim Hortons' visual identity.
 #### Technologies:
 - **Kotlin**: Primary programming language.
 - **Android SDK**: Core framework for building the application.
-- **SharedPreferences**: For saving and retrieving user selections.
-- **UI Elements**: TextView, EditText, RadioGroup, CheckBox, Button, and drawable objects for a polished UI.
-- **ConstraintLayout/RelativeLayout**: For flexible and responsive UI design.
+- **Figma**: Wireframe design.
 
 #### Getting Started:
 1. Clone the repository.
